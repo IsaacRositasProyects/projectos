@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+<title>Variaciones de Listas y Tablas</title>
+    <link rel="stylesheet" href="Menu.css">
+
+<style>
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 15px;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>Ejemplo</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>Lista No Ordenada</td>
+            <td>
+                <ul>
+                    <li>Huevo</li>
+                    <li>Frijoles</li>
+                    <li>Aceite</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Lista Ordenada</td>
+            <td>
+                <ol>
+                    <li>Huevo</li>
+                    <li>Frijoles</li>
+                    <li>Aceite</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Lista de Definición</td>
+            <td>
+                <dl>
+                    <dt>Branding</dt>
+                    <dd>Construcción estratégica de identidad de marca.</dd>
+                    <dt>UX</dt>
+                    <dd>Optimización de experiencia de usuario.</dd>
+                </dl>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Lista Anidada</td>
+            <td>
+                <ul>
+                    <li>Servicios
+                        <ul>
+                            <li>Branding</li>
+                            <li>Redes Sociales</li>
+                        </ul>
+                    </li>
+                    <li>Contacto
+                        <ul>
+                            <li>878 143 5822</li>
+                            <li>Aura Graphic Design</li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Lista Ordenada desde 5</td>
+            <td>
+                <ol start="5">
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Lista Reversa</td>
+            <td>
+                <ol reversed>
+                    <li>Tercero</li>
+                    <li>Segundo</li>
+                    <li>Primero</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Lista Horizontal</td>
+            <td>
+                <ul style="list-style:none; display:flex; gap:20px; padding:0;">
+                    <li>Inicio</li>
+                    <li>Servicios</li>
+                    <li>Contacto</li>
+                    <li>Portafolio</li>
+                    <li>Cotizar</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Tabla de Servicios</td>
+            <td>
+                <table style="border-collapse: collapse; width:100%;">
+                    <tr>
+                        <th style="border:1px solid black;">Servicio</th>
+                        <th style="border:1px solid black;">Precio</th>
+                        <th style="border:1px solid black;">Tiempo</th>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black;">Branding</td>
+                        <td style="border:1px solid black;">$800</td>
+                        <td style="border:1px solid black;">3 semanas</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid black;">Redes Sociales</td>
+                        <td style="border:1px solid black;">$600</td>
+                        <td style="border:1px solid black;">1 mes</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+</body>
+            <a href="Menu.html" class="back-btn">
+                ⟵ Regresar
+            </a>
+            <script>
+
+document.addEventListener("keydown", function(event){
+
+    if(event.altKey && event.key === "b"){
+        window.location.href = "menu.html";
+    }
+
+});
+
+</script>
+</html>

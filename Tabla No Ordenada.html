@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+        <link rel="stylesheet" href="Menu.css">
+
+<head>
+    <title>Tablas & Listas</title>
+</head> 
+<body>
+
+    <h1> Listas No Ordenada </h1>
+
+        <ul>
+            <li>Huevo</li>
+            <li>Frijoles</li>
+            <li>Aceite</li>
+        </ul>
+
+    <h1> Listas Ordenada </h1>
+
+        <ol>
+            <li>Huevo</li>
+            <li>Frijoles</li>
+            <li>Aceite</li>
+        </ol>
+
+    <h1> Lista de definición</h1>
+
+        <dl>
+            <dt>Branding</dt>
+            <dd>Construcción estratégica de identidad de marca.</dd>
+
+            <dt>UX</dt>
+            <dd>Optimización de experiencia de usuario.</dd>
+        </dl>
+
+    <h1> Lista anidadas</h1>
+
+        <ul>
+            <li>Servicios
+                <ul>
+                    <li>Branding</li>
+                    <li>Redes Sociales</li>
+                </ul>
+            </li>
+            <li>Contacto</li>
+                <ul>
+                    <li>878 143 5822</li>
+                    <li>Aura Graphic Design</li>
+                </ul>
+        </ul>
+
+    <h1>Tablas</h1>
+
+        <table border="1px">
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+                <th>Tiempo</th>
+            </tr>
+            <tr>
+                <td>Branding</td>
+                <td>$800</td>
+                <td>3 semanas</td>
+            </tr>
+            <tr>
+                <td>Redes Sociales</td>
+                <td>$600</td>
+                <td>1 mes</td>
+            </tr>
+        </table>
+
+    <h1>Tabla inicia en...</h1>
+
+        <ol start="5">
+            <li>Elemento</li>
+            <li>Elemento</li>
+            <li>Elemento</li>
+            <li>Elemento</li>
+            <li>Elemento</li>
+            <li>Elemento</li>
+        </ol>
+
+    <h1>Tabla Rversa</h1>
+
+        <ol reversed>
+            <li>Tercero</li>
+            <li>Segundo</li>
+            <li>Primero</li>
+        </ol>
+
+    <h1>Tabla Horizontal</h1>
+
+        <ul style="list-style:none; display:flex; gap:20px;">
+            <li>Inicio</li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+            <li>Portafolio</li>
+            <li>Cotizar</li>
+        </ul>
+
+</body>
+            <a href="Menu.html" class="back-btn">
+                ⟵ Regresar
+            </a>
+            <script>
+
+document.addEventListener("keydown", function(event){
+
+    if(event.altKey && event.key === "b"){
+        window.location.href = "menu.html";
+    }
+
+});
+
+</script>
+</html>
